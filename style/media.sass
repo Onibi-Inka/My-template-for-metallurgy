@@ -1,0 +1,195 @@
+@media ( max-width: 1200px)
+    .container
+        max-width: 970px
+    .headerInner
+        font-size: 13px
+@media ( max-width: 992px)
+    .container
+        max-width: 750
+    .navLink
+        margin-left: 20px
+    .logoImg
+        width: 50px
+        height: 50px
+        margin-right: 14px
+    .logoName
+        font-size: 20px
+    .featuresBlock
+        @include features($cols: 2, $margin: 4%)
+        height: 330px
+    .m3
+        margin-right: 4%!important
+
+@media ( max-width: 768px)
+    .container
+        max-width: none
+    .header:before
+        display: flex
+    .burger
+        display: block
+        position: relative
+        width: 30px
+        height: 20px
+        z-index: 16
+        right: 0
+        &:before,
+        &:after
+            content: ''
+            background-color: #000
+            position: absolute
+            width: 100%
+            height: 2px
+            left: 0
+        &:before
+            top: 0
+        &:after
+            bottom: 0
+        & span
+            position: absolute
+            background-color: #000
+            left: 0
+            width: 100%
+            height: 2px
+            top: 9px
+    .nav
+        position: fixed
+        display: none
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+
+    .nav.show
+        display: flex
+        padding-top: 80px
+        text-align: center
+        justify-content: center
+        & .header:before
+            height: 100px
+    .headerNumber
+        display: none
+    .intro
+        height: 570px
+        margin-bottom: 60px
+    .introImg
+        display: flex
+        align-content: center
+        flex-wrap: wrap
+        & img
+            height: 550px
+    .slick-prev
+        left: 43%
+    .slick-next
+        right: 43%
+    .slider
+        margin-bottom: 110px
+    .servicesTitle
+        margin-bottom: 50px
+    .masonry-layout__panel
+        padding: 15px
+    .masonry-layout__panel-content
+        padding: 20px
+    .orderBar
+        justify-content: space-between
+    .customerData
+        font-size: 16.5px
+        width: 46%
+    .orderInput
+        width: 54%
+
+@media ( max-width: 500px)
+    .nav.show
+        display: flex
+        justify-content: flex-start
+        flex-direction: column
+    .under
+        height: 210px
+    .navLink
+        font-size: 15px
+        margin: 0 0 5px 0
+    .intro
+        height: 470px
+    .introTitle
+        font-size: 38px
+        margin-bottom: 30px
+    .introSubtitle
+        font-size: 16px
+        margin-bottom: 30px
+        width: 100%
+    .introImg img
+        height: 350px
+    .featuresTitle
+        text-align: center
+    .featuresBlock
+        @include features($cols: 1, $margin: 5%)
+        height: 350px
+    .slick-prev
+        left: 40%
+    .slick-next
+        right: 40%
+    .featuresTitle
+        margin-bottom: 40px
+    .portfolioTitle
+        margin-bottom: 40px
+    .servicesTitle
+        margin-bottom: 40px
+    .orderTitle
+        margin-bottom: 40px
+    .masonry-layout
+        column-count: 1
+    .services
+        margin-bottom: 55px
+    .orderBar
+        width: 100%
+    .customerData
+        width: 47%
+    .orderInput
+        width: 53%
+    .orderInner
+        margin-bottom: 65px
+    .footerInner
+        padding: 10px 0
+        justify-content: space-around
+        text-align: center
+        & .logo
+            justify-content: center
+            order: 2
+        & .contacts
+            order: 1
+            margin-bottom: 15px
+        & .address
+            margin-bottom: 35px
+            order: 3
+        & .copyright
+            order: 4
+            margin: 0
+    .footerRow
+        display: flex
+        flex-direction: column
+
+@media ( max-width: 376px)
+    .introImg
+        display: none
+    .intro
+        height: 450px
+        margin-bottom: 40px
+    .introInner
+        width: 80%
+        text-align: center
+        & .btn
+            margin: 0 auto
+    .services
+        margin-bottom: 40px
+    .masonry-layout__panel-content .blockTitle
+        margin: 16px 0
+    .customerData
+        font-size: 16px
+    .footerRow:first-child
+        margin-right: 10px
+    .numbers
+        font-size: 15px
+    .footerInner .address
+        margin-bottom: 0
+    .footerInner .copyright
+        padding-top: 15px
+
